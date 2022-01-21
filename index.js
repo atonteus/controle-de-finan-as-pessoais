@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
+
 const routes = require('./routes/routes');
 const path = require('path');
 const dotenv = require('dotenv');
@@ -15,7 +16,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-/*rotaRaiz*/
+/* Rota Raiz */
 
 app.get('/api/', (_, response) => {
   response.send({
@@ -24,7 +25,7 @@ app.get('/api/', (_, response) => {
   });
 });
 
-/* Rotas principais do app */
+/*  Rotas principais do app  */
 
 app.use('/api/transaction', routes);
 
