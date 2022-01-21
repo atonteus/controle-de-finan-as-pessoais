@@ -48,6 +48,8 @@ const PERIODS = [
 const LIST_SCREEN = 0;
 const MAINTENANCE_SCREEN = 1;
 
+// App fc Trpr
+
 export default function App() {
   const [transactions, setTransactions] = React.useState([]);
   const [filteredTransactions, setFilteredTransactions] = React.useState([]);
