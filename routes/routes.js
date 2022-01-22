@@ -3,6 +3,9 @@ const transactionRouter = express.Router();
 
 const service = require('../services/transactionService');
 
+
+//Rota Get
+
 transactionRouter.get('/', async (request, response) => {
   const { query } = request;
 
