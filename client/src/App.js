@@ -49,6 +49,7 @@ const LIST_SCREEN = 0;
 const MAINTENANCE_SCREEN = 1;
 
 // App fc Trpr
+// useEffect 1
 
 export default function App() {
   const [transactions, setTransactions] = React.useState([]);
