@@ -80,17 +80,6 @@ export default function ListScreen({
           </div>
         );
 
-export default function ListScreen({
-  transactions,
-  periods,
-  filteredText,
-  currentPeriod,
-  onDeleteTransaction,
-  onEditTransaction,
-  onNewTransaction,
-  onFilterChange,
-  onPeriodChange,
-})
       })}
     </>
   );
