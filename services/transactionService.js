@@ -10,6 +10,11 @@ async function getTransactionsFrom(period) {
   return transactions;
 }
 
+async function getTransactionsFrom(period) {
+  const transactions = await TransactionModel.find({ yearMonth: period });
+  return transactions;
+}
+
 async function postTransaction(transaction) {
   const newTransactionMongoDB = await TransactionModel.create(transaction);
   return newTransactionMongoDB;
